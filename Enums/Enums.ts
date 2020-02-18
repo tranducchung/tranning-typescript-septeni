@@ -21,18 +21,19 @@ enum enumsNumber1 {
 enum enumsNumber2 {
     N1 = 1,
     N2 = 4,
-    N3 = 6
+    N3
 }
 
 
 // Computed Number
 
 enum enumsNumber3 {
-    N2,
-    N4,
     N1 = returnNum(5),
     N3 = returnNum(5),
     N5 = N3 * 5,
+    N2 = 0,
+    N4,
+
 }
 
 function returnNum(value: number): number {
@@ -75,10 +76,10 @@ enum reverseEnum {
 console.log(reverseEnum);
 
 
-console.log(reverseEnum['3']);
+console.log(reverseEnum['2']);
 console.log(reverseEnum['COME']);
 console.log(reverseEnum.R1);
 console.log(reverseEnum['R2']);
 console.log(reverseEnum['HELLO']);
-console.log(reverseEnum[3]);
+console.log(reverseEnum['0']);
 // console.log(reverseEnum[1]);

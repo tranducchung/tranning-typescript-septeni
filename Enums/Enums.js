@@ -5,6 +5,7 @@ var enumsNumber;
     enumsNumber[enumsNumber["N2"] = 1] = "N2";
     enumsNumber[enumsNumber["N3"] = 2] = "N3";
 })(enumsNumber || (enumsNumber = {}));
+
 function foo(value) {
     if (value === 'hello' || value === ' xinchao') {
         return enumsNumber.N1;
